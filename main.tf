@@ -35,7 +35,7 @@ resource "docker_container" "api" {
   }
 
 volumes {
- volume_name = docker_volume.data.name
- container_path = "/data"
-}
+    volume_name    = docker_volume.data.name
+    container_path = "/data"
+  }
 }
